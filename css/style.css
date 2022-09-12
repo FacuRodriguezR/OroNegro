@@ -1,16 +1,16 @@
 :root {
-  --theme-color: #ffffff;
-  --primary-color: #ff6a00;
-  --secondary-color: #f4f76a ;
-  --text-color: #000;
-  --text-color-inverse: #000000;
-  --menu-mobile-background-color:white;
-  --navbar-color:#323232;
+  --theme-color: white;
+  --primary-color: #ff8800;
+  --secundary-color: #F7C331;
+  --text-color-inverse: white;
+  --text-color: black;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #ff8800;
 }
 
 body{
   font-family: 'Righteous';
-  background-color: var(--theme-color);
+  background-color: white;
   color: var(--text-color);
 }
 

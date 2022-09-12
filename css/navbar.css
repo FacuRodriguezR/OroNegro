@@ -1,5 +1,5 @@
 .topheader{
-    box-shadow: 0 4px 5px var(--navbar-color);
+    box-shadow: 0 4px 5px var(--navbar-shallow-color);
     position: fixed;
     background-color: var(--theme-color);
     left: 0;
@@ -45,13 +45,16 @@
     font-weight: 500;
     line-height: 50px;
     text-transform: uppercase;
+
+    position: relative  ;
 }
 
-.open-menu, .close-menu{
+.open-menu,
+.close-menu{
     display: none;
 }
 
-@media ( max-width: 750px ) {
+@media ( max-width: 950px ) {
  
     .menu{
         flex-direction: column;
@@ -66,16 +69,18 @@
         opacity: 0;
 
         pointer-events: none;
+        transition: opacity 0.3s;
 
     }
     
     .menu li{
-        padding: 0 15px;
+        padding: 0;
     }
     
     .menu a{
-        color: white;
-        line-height: 60px;    
+        color: var(--text-color-inverse);
+        line-height: 60px;   
+        
     }
     
     .open-menu, .close-menu{
@@ -93,5 +98,10 @@
     .menu_opened{
         opacity: 1;
         pointer-events: all;
+    }
+
+    .open-menu:focus:not(:focus-visible),
+    .close-menu:focus:not(:focus-visible) {
+      outline: none;
     }
 }
